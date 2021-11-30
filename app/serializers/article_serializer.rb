@@ -3,9 +3,6 @@ class ArticleSerializer < ActiveModel::Serializer
   attribute :events
   attribute :launches
 
-  # has_many :events
-  # has_many :launches
-
   def events
     object.events.map do |event|
       {
